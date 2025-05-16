@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #003366; /* A deeper, dignified blue */
+    --secondary-color: #5a768a; /* A softer blue-gray for accents */
+    --text-color: #333333;
+    --light-text-color: #555555;
+    --background-color: #f4f7f6;
+    --container-background: #ffffff;
+    --quote-border-color: #004080; /* Slightly brighter blue for quote */
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Modern sans-serif for body */
+    line-height: 1.7;
+    margin: 0;
+    padding: 20px 0; /* Add padding top/bottom */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center container */
+}
+
+.container {
+    background-color: var(--container-background);
+    padding: 30px 40px; /* Increased padding */
+    border-radius: 12px; /* Softer border radius */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1); /* More pronounced shadow */
+    max-width: 750px;
+    width: 90%; /* Responsive width */
+    margin: 20px auto;
+    text-align: left;
+}
+
+.header-image {
+    max-width: 220px; /* Slightly adjusted size */
+    height: auto;
+    border-radius: 50%; /* Circular image for a softer look */
+    border: 4px solid var(--primary-color); /* Optional border */
+    margin: 0 auto 30px auto; /* Centering and spacing */
+    display: block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-family: 'Merriweather', serif; /* Elegant serif for main heading */
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5em; /* Larger main title */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Merriweather', serif; /* Consistent serif for sub-headings */
+    color: var(--primary-color);
+    text-align: center; /* Centered as before */
+    font-size: 1.8em; /* Adjusted size */
+    margin-top: 40px; /* More space above */
+    margin-bottom: 20px; /* Space below */
+    font-weight: 700;
+}
+
+blockquote {
+    border-left: 4px solid var(--quote-border-color);
+    margin: 25px 0; /* Adjusted margins */
+    padding: 15px 25px; /* Increased padding */
+    font-family: 'Merriweather', serif; /* Serif for quotes for distinction */
+    font-style: italic;
+    font-size: 1.15em; /* Slightly larger quote text */
+    color: var(--light-text-color);
+    background-color: #fdfdff; /* Very slight off-white for quote background */
+    border-radius: 0 8px 8px 0; /* Rounded corners on one side */
+}
+
+.attribution {
+    text-align: right;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif; /* Back to sans-serif for attribution */
+    font-style: normal; /* Not italic */
+    font-size: 0.95em;
+    color: var(--secondary-color);
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+    margin-top: 10px;
+}
+
+ul li {
+    padding: 10px 0 10px 25px; /* Add padding for custom bullet */
+    position: relative; /* For custom bullet positioning */
+    font-size: 1.05em;
+    border-bottom: 1px solid #eee; /* Subtle separator */
+}
+
+ul li:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+ul li::before {
+    content: "\2713"; /* Checkmark character or choose another like • (\2022) */
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1em;
+}
+
+.final-quote {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e9f0f7; /* Light blue background for emphasis */
+    border-left: 5px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.final-quote p:first-child {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 1.2em;
+    color: var(--text-color);
+    margin-bottom: 15px; /* Space before attribution */
+    line-height: 1.6;
+}
+
+.final-quote .attribution {
+    text-align: right;
+    font-size: 1em;
+    color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 30px;
+        width: 95%;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    blockquote {
+        padding: 15px 20px;
+        font-size: 1.1em;
+    }
+    .header-image {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px 0;
+    }
+    .container {
+        padding: 20px 15px;
+    }
+    h1 {
+        font-size: 1.9em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    blockquote {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+    .header-image {
+        max-width: 150px;
+        border-width: 3px;
+    }
+    ul li {
+        padding: 8px 0 8px 20px;
+    }
+    ul li::before {
+        font-size: 1em;
+    }
+    .final-quote {
+        padding: 15px;
+    }
+     .final-quote p:first-child {
+        font-size: 1.1em;
+    }
+    .attribution, .final-quote .attribution {
+        font-size: 0.9em;
+        text-align: center;
+    }
+}
