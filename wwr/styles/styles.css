@@ -1,0 +1,171 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfcfa;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #5a6351;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    flex-wrap: wrap;
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#hero-msg {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.home-title {
+    font-size: 2em;
+    color: #333;
+}
+
+.button-box .book {
+    display: inline-block;
+    background-color: #ad8f60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.button-box .book:hover {
+    background-color: #8b734d;
+}
+
+/* Home Grid Layout */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.icon {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Mountains Section */
+.mountains {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 0;
+}
+
+/* Message Section */
+.msg {
+    background-color: #5a6351;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 40px auto 0;
+}
+
+.msg h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.msg p {
+    font-size: 1em;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.msg .join {
+    display: inline-block;
+    background-color: #d4b68a;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.msg .join:hover {
+    background-color: #c1a873;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5a6351;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #f4c542;
+    text-decoration: underline;
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.social a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
