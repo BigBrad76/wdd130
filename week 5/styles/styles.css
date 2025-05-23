@@ -1,0 +1,32 @@
+img {
+    border: 4px solid steelblue;
+    max-width: 900px;
+    border-radius: 25px;
+    /* --- Centering properties below --- */
+    display: block; /* Images are inline by default, make it a block element */
+    margin: 0 auto; /* This centers the block element horizontally */
+}
+
+footer {
+    background-color: steelblue;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+footer p {
+    padding: 25px;
+    text-align: center;
+}
+h1 {
+    margin :50px 0;
+    text-align: center;
+}
+nav {
+    background-color: steelblue;
+    text-align: center;
+}
+a {
+    color: white;
+    font-size: x-large;
+    padding: 25px;
+}
