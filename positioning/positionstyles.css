@@ -170,16 +170,14 @@ display: grid;
      min-height: 100px;
      background-color: green;
      float: left; 
-     margin-right: 10px; 
+    margin-right: 0 25px 25px 0;
  }
 
  .yellow5 {
      width: 100%;
-     height: auto;
      min-height: 50px; 
      background-color: gold;
-     float: none; 
-     clear: left; 
+     
  }
 
  .blue5 {
