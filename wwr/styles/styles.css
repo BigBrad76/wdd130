@@ -11,7 +11,7 @@
 body {
     /* Font Changes - Body Font */
     font-family: 'Open Sans', Arial, sans-serif; 
-    background-color: #fdfcfa;
+    background-color: #ffffff;
     color: #333;
     font-size: 22px;
     margin: 0; 
@@ -20,37 +20,40 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #5a6351;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 5%;
-    flex-wrap: wrap;
-}
-
-#logo_link {
-    padding-top: 5px;
+    position: absolute; /* Position it over the hero image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(90, 99, 81, 0.7); /* Dark, semi-transparent background */
+    z-index: 10; /* Ensure it's on top of other elements */
 }
 
 header img {
-    height: 50px;
+    height: 60px; /* Slightly larger logo */
 }
 
 nav a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
-    padding: 35px; 
+    padding: 20px 15px;
+    margin: 0 5px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #d4b68a; /* Highlight color from your "Join" button */
+    color: #333;
+    border-radius: 5px;
 }
 
 /* Hero Section */
 #hero {
     position: relative;
+    text-align: center; /* Center content inside */
 }
 
 #hero-img {
@@ -59,33 +62,38 @@ nav a:hover {
     display: block;
 }
 
+/* Centered Hero Message Box */
 #hero-msg {
     position: absolute;
-    top: 20%;
-    left: 10%;
-    background-color: rgba(255, 255, 255, 0.85);
+    top: 50%; /* Position at 50% from the top */
+    left: 50%; /* Position at 50% from the left */
+    transform: translate(-50%, -50%); /* Perfectly center the element */
+    background-color: transparent; /* Remove the white box */
     padding: 20px;
-    border-radius: 8px;
-    text-align: center;
 }
 
 .home-title {
-    font-family: 'Montserrat', Georgia, serif; 
-    font-size: 2em; 
-    color: #333;
-    margin-top: 10px;
+    font-family: 'Montserrat', Georgia, serif;
+    font-size: 3em; /* Larger font size */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
+}
+
+#hero-msg h4 { /* Assuming "Make Memories..." is an h4 */
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
 }
 
 .button-box .book {
-    display: inline-block;
     background-color: #ad8f60;
     color: white;
-    font-size: 18px; 
-    padding: 15px 30px; 
+    font-size: 18px;
+    padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 50px;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 .button-box .book:hover {
@@ -95,80 +103,79 @@ nav a:hover {
 /* Home Grid Layout */
 .home-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr); /* Simple 3-column grid */
     gap: 40px;
-    padding: 40px 5%;
+    padding: 80px 5%; /* Add space above and below */
     text-align: center;
-    justify-items: center;
+    background-color: #fff; /* Ensure white background */
+}
+
+/* General Card Styling */
+.rivers-card, .camping-card, .rapids-card {
+    /* We don't need any specific placement rules anymore! */
+    margin: 0;
 }
 
 .card-img {
     width: 100%;
     border-radius: 8px;
-    border: 10px solid #d9c2a3; 
+    border: 10px solid #d9c2a3; /* Add the border back */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .icon {
-    width: 40px;
-    margin-top: 10px;
-    padding-top: 10px; 
+    width: 60px;
+    padding-top: 15px; /* Icon is below the image now */
+    margin-top: 0; /* Remove the negative margin */
+}
+/* Thrill Section */
+.thrill-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: center;
+    background-color: #d9c2a3; /* Tan background for the whole section */
+    padding: 50px;
+    gap: 50px;
 }
 
-.rivers-card, .camping-card, .rapids-card {
-    max-width: 400px;
-    margin: 0 auto;
-    margin: 200px 0; 
-}
-
-/* Mountains Section */
-.mountains {
+.thrill-img-container img {
     width: 100%;
-    margin-top: 40px;
-    border-radius: 0;
+    height: auto;
+    display: block;
 }
 
-main section img {
-    box-sizing: border-box; 
-}
-
-.msg {
-    background-color: #5a6351;
+.thrill-msg {
+    background-color: #5a6351; /* Dark green background for text box */
     color: white;
-    text-align: center;
-    margin: 40px auto 0;
-    line-height: 1.5em; 
-    padding: 35px; 
+    padding: 40px;
+    text-align: left;
 }
 
-.msg h2 {
-    font-family: 'Montserrat', Georgia, serif; 
+.thrill-msg h2 {
+    font-family: 'Montserrat', Georgia, serif;
     font-size: 1.5em;
-    margin: 0; 
 }
 
-.msg p {
-    font-size: .8em; 
-    max-width: 700px;
-    margin: 0 auto 20px;
-    padding-bottom: 15px; 
+.thrill-msg p {
+    font-size: .8em;
+    line-height: 1.6;
+    margin: 20px 0;
 }
 
-.msg .join {
+.thrill-msg .join {
     display: inline-block;
     background-color: #d4b68a;
     color: #333;
-    font-size: 18px; 
-    padding: 15px 30px; 
+    font-size: 18px;
+    padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 50px; 
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
-.msg .join:hover {
+.thrill-msg .join:hover {
     background-color: #c1a873;
 }
-
 /* Footer Styles */
 footer {
     background-color: #5a6351;
