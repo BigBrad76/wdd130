@@ -1,0 +1,169 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light grey background for the page itself */
+}
+
+/* Header Styles */
+header {
+    display: flex; /* Arranges children (logo and nav) horizontally */
+    justify-content: space-between; /* Puts space between logo and nav */
+    align-items: center; /* Vertically centers logo and nav items */
+    padding: 10px 20px; /* Padding around the header content */
+    background-color: rgba(90, 99, 81, 0.7); /* Green background color */
+    border: 2px solid #697469; /* Darker green border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* More prominent shadow */
+}
+
+/* Specific style for the logo image */
+#logo_link .logo { /* Targeting the image within the logo_link */
+    max-width: 100px; /* Adjust logo size */
+    height: auto;
+    display: block; /* Ensures no extra space below image */
+}
+
+/* Navigation Links within the Header */
+nav {
+    display: flex; /* Arranges nav links horizontally */
+    gap: 20px; /* Space between navigation links */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Changed text color to white for better contrast on green */
+    font-weight: bold;
+    padding: 5px 10px; /* Padding around links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #DDDDDD; /* Lighter grey on hover for white text */
+}
+
+/* Main Content Area */
+main {
+    margin: 20px 0; /* Adds vertical margin, removes horizontal auto-centering */
+    padding: 20px 5%; /* Keep padding for internal spacing, but stretch horizontally */
+    background-color: #ffffff; /* White background for main content */
+    border-radius: 0; /* Remove border-radius for sharp, full-width corners */
+    box-shadow: none; /* Remove shadow to blend with body background */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Top 3 Rivers Section */
+.river-list {
+    display: flex; /* Arranges river items in a row */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Space between river items */
+    justify-content: center; /* Centers the river items within their container */
+}
+
+.river-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    flex: 1; /* Allows items to grow and shrink */
+    min-width: 280px; /* Minimum width for each card */
+    /* Calculation for max-width to allow roughly 3 items per row with gap */
+    max-width: calc(33.333% - 13.333px); /* (100% - 2*gap)/3 */
+    box-sizing: border-box; /* Include padding/border in width */
+    display: flex; /* Arrange image and description side-by-side */
+    align-items: flex-start; /* Align content to the top */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for cards */
+}
+
+.river-item .river-image {
+    flex-shrink: 0; /* Prevents image from shrinking */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.river-item .river-image img {
+    display: block; /* Remove extra space below image */
+    border-radius: 3px;
+    width: 150px; /* As per your HTML's placeholder */
+    height: 100px; /* As per your HTML's placeholder */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+.river-item .river-description h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.river-item .river-description p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Other Rivers Section */
+.other-rivers {
+    margin-top: 40px;
+}
+
+.other-rivers ul {
+    list-style: disc; /* Bullet points */
+    margin-left: 20px;
+    padding: 0;
+}
+
+.other-rivers li {
+    margin-bottom: 8px;
+}
+
+.other-rivers li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.other-rivers li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    display: flex; /* Arranges footer content horizontally */
+    justify-content: space-between; /* Puts space between links and social media */
+    align-items: center; /* Vertically centers content */
+    padding: 20px;
+    background-color: #333; /* Dark background for footer */
+    color: white;
+    margin-top: 30px; /* Space above footer */
+}
+
+.footer-links {
+    display: flex; /* Arranges footer links horizontally */
+    gap: 20px; /* Space between footer links */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: text-decoration 0.3s ease;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex; /* Arranges social media icons horizontally */
+    gap: 15px; /* Space between icons */
+}
+
+.social-media img {
+    width: 30px; /* Consistent icon size */
+    height: 30px;
+    border-radius: 4px; /* Slightly rounded icons */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background for icons */
+    padding: 2px;
+}
