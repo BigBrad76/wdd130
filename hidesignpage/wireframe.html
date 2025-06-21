@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Design - Wireframe Visuals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Basic styles for wireframe visualization */
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .wireframe-container {
+            border: 3px solid #d1d5db;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+        }
+        .wireframe-header {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #4a5568;
+            color: white;
+            padding: 1rem;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .placeholder-box {
+            background-color: #e2e8f0;
+            border: 2px dashed #a0aec0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4a5568;
+            font-weight: bold;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+         .header-nav .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 1.25rem;
+         }
+         .header-nav nav a {
+            margin-left: 1.5rem;
+            color: #2d3748;
+            font-weight: bold;
+         }
+         .footer {
+            background-color: #edf2f7;
+            border-top: 1px solid #e2e8f0;
+            padding: 2rem;
+            text-align: center;
+            color: #718096;
+         }
+         h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+         }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="text-center mb-10">
+        <h1 class="text-4xl font-bold font-montserrat text-gray-800">Hi Design Land/Hardscaping</h1>
+        <p class="text-xl text-gray-600 mt-2">Visual Wireframe Examples</p>
+    </div>
+
+    <!-- Home Page Wireframe -->
+    <div class="wireframe-container max-w-6xl mx-auto">
+        <div class="wireframe-header">Home Page</div>
+        <div class="p-4">
+            <!-- Header -->
+            <header class="header-nav">
+                <div class="logo">Hi Design Logo</div>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <main class="p-4 md:p-8">
+                <!-- Hero Section -->
+                <section class="text-center">
+                    <div class="placeholder-box h-64 md:h-96 flex-col">
+                        <p>Large Hero Image</p>
+                        <p class="mt-4 text-2xl md:text-4xl font-bold">"Welcome to Hi Design..."</p>
+                    </div>
+                </section>
+
+                <!-- About Us Snippet -->
+                <section class="mt-12 text-center">
+                    <h3>About Us</h3>
+                    <p class="max-w-3xl mx-auto text-gray-600">Brief paragraph about the company's mission, values, and experience to build immediate trust with visitors.</p>
+                </section>
+
+                <!-- Services Grid -->
+                <section class="mt-12">
+                    <h3 class="text-center">Our Services</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
+                        <div class="placeholder-box h-48 flex-col"><p>Service 1</p><p>(e.g. Design)</p></div>
+                        <div class="placeholder-box h-48 flex-col"><p>Service 2</p><p>(e.g. Hardscape)</p></div>
+                        <div class="placeholder-box h-48 flex-col"><p>Service 3</p><p>(e.g. Maintenance)</p></div>
+                    </div>
+                </section>
+
+                <!-- Portfolio Grid -->
+                 <section class="mt-12">
+                    <h3 class="text-center">Portfolio Highlights</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+                        <div class="placeholder-box h-40">Project 1</div>
+                        <div class="placeholder-box h-40">Project 2</div>
+                        <div class="placeholder-box h-40">Project 3</div>
+                        <div class="placeholder-box h-40">Project 4</div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                Footer: Logo, Navigation, Contact Info, Social Links
+            </footer>
+        </div>
+    </div>
+
+    <!-- Services Page Wireframe -->
+    <div class="wireframe-container max-w-6xl mx-auto">
+        <div class="wireframe-header">Services Page</div>
+        <div class="p-4">
+            <!-- Header -->
+            <header class="header-nav">
+                <div class="logo">Hi Design Logo</div>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <main class="p-4 md:p-8">
+                <h3 class="text-center mt-0">Our Landscaping Services</h3>
+                
+                <!-- Service Item 1 -->
+                <section class="mt-8 flex flex-col md:flex-row items-center gap-8">
+                    <div class="placeholder-box w-full md:w-1/2 h-64">Service Image</div>
+                    <div class="w-full md:w-1/2">
+                        <h4 class="text-2xl font-bold font-montserrat">Landscape Design</h4>
+                        <p class="mt-2 text-gray-600">Detailed paragraph explaining the landscape design process, the types of projects undertaken, and the benefits of a professional design plan for clients.</p>
+                    </div>
+                </section>
+
+                <!-- Service Item 2 -->
+                <section class="mt-12 flex flex-col md:flex-row-reverse items-center gap-8">
+                     <div class="placeholder-box w-full md:w-1/2 h-64">Service Image</div>
+                    <div class="w-full md:w-1/2">
+                        <h4 class="text-2xl font-bold font-montserrat">Hardscaping</h4>
+                        <p class="mt-2 text-gray-600">Detailed paragraph about hardscaping services, covering patios, walkways, retaining walls, etc. Mention materials and the focus on durability and aesthetics.</p>
+                    </div>
+                </section>
+                
+                 <!-- Service Item 3 -->
+                <section class="mt-12 flex flex-col md:flex-row items-center gap-8">
+                    <div class="placeholder-box w-full md:w-1/2 h-64">Service Image</div>
+                    <div class="w-full md:w-1/2">
+                        <h4 class="text-2xl font-bold font-montserrat">Lawn Maintenance</h4>
+                        <p class="mt-2 text-gray-600">Detailed paragraph covering regular maintenance services, such as mowing, fertilization, and seasonal clean-up. Emphasize reliability and care.</p>
+                    </div>
+                </section>
+
+                <!-- CTA Section -->
+                <section class="mt-16 text-center bg-gray-100 p-8 rounded-lg">
+                     <h4 class="text-2xl font-bold font-montserrat">Ready to Transform Your Space?</h4>
+                     <p class="mt-2 text-gray-700">Let's discuss your project. Contact us for a free consultation.</p>
+                     <button class="mt-4 px-8 py-3 bg-green-600 text-white font-bold rounded-lg shadow-md hover:bg-green-700">Get a Quote</button>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                Footer: Logo, Navigation, Contact Info, Social Links
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- Contact Us Page Wireframe -->
+    <div class="wireframe-container max-w-6xl mx-auto">
+        <div class="wireframe-header">Contact Us Page</div>
+        <div class="p-4">
+            <!-- Header -->
+            <header class="header-nav">
+                <div class="logo">Hi Design Logo</div>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <main class="p-4 md:p-8">
+                 <h3 class="text-center mt-0">Get In Touch</h3>
+                 <p class="text-center text-gray-600 mb-10">We'd love to hear from you. Reach out for a free consultation.</p>
+                <div class="flex flex-col md:flex-row gap-10">
+                    <!-- Left Side: Contact Info -->
+                    <div class="w-full md:w-2/5">
+                        <h4 class="text-2xl font-bold font-montserrat mb-4">Contact Information</h4>
+                        <div class="space-y-4 text-gray-700">
+                           <p><strong>Phone:</strong> (123) 456-7890</p>
+                           <p><strong>Email:</strong> contact@hidesign.com</p>
+                           <p><strong>Hours:</strong> Mon - Fri, 8:00 AM - 5:00 PM</p>
+                        </div>
+                        <div class="placeholder-box h-48 mt-8">Image</div>
+                    </div>
+                    <!-- Right Side: Contact Form -->
+                    <div class="w-full md:w-3/5 bg-gray-50 p-6 rounded-lg border">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="font-bold">Name</label>
+                                <div class="placeholder-box h-10 mt-1">Text Input</div>
+                            </div>
+                             <div>
+                                <label class="font-bold">Email</label>
+                                <div class="placeholder-box h-10 mt-1">Text Input</div>
+                            </div>
+                             <div>
+                                <label class="font-bold">Phone</label>
+                                <div class="placeholder-box h-10 mt-1">Text Input</div>
+                            </div>
+                             <div>
+                                <label class="font-bold">Message</label>
+                                <div class="placeholder-box h-32 mt-1">Text Area</div>
+                            </div>
+                            <button class="w-full py-3 bg-green-600 text-white font-bold rounded-lg shadow-md hover:bg-green-700">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                Footer: Logo, Navigation, Contact Info, Social Links
+            </footer>
+        </div>
+    </div>
+
+</body>
