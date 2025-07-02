@@ -286,6 +286,20 @@ form {
     margin-top: 4em;
 }
 
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;  
+    margin-top: 50px;    
+}
+.moveDown {
+    margin-top: 4em;
+}
 p + p {
   margin-top: 1em;
 }
