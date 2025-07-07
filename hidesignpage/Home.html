@@ -6,153 +6,111 @@
     <title>Hi Design - Wireframe Visuals</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400&display=swap" rel="stylesheet">
-    <style>
-        /* Basic styles for wireframe visualization */
-        body {
-            font-family: 'Lato', sans-serif;
-            background-color: #f0f2f5;
-        }
-        .wireframe-container {
-            border: 3px solid #d1d5db;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 3rem;
-        }
-        .wireframe-header {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #4a5568;
-            color: white;
-            padding: 1rem;
-            border-top-left-radius: 6px;
-            border-top-right-radius: 6px;
-            text-align: center;
-            font-size: 1.5rem;
-        }
-        .placeholder-box {
-            background-color: #e2e8f0;
-            border: 2px dashed #a0aec0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #4a5568;
-            font-weight: bold;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .header-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            border-bottom: 1px solid #e2e8f0;
-        }
-         .header-nav .logo {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            font-size: 1.25rem;
-         }
-         .header-nav nav a {
-            margin-left: 1.5rem;
-            color: #2d3748;
-            font-weight: bold;
-         }
-         .footer {
-            background-color: #edf2f7;
-            border-top: 1px solid #e2e8f0;
-            padding: 2rem;
-            text-align: center;
-            color: #718096;
-         }
-         h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            text-align: center;
-         }
-    </style>
-</head>
+    <link rel="stylesheet" href="styles/hidesign.css">
+    
+<body>
+    <!-- Header -->
+    <header class="header-nav">
+        <div class="logo">
+            <img src="images/Gemini_Generated_Image_izc95vizc95vizc9.png" alt="Hi Design Logo">
+        </div>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact Us</a>
+        </nav>
+    </header>
 
-        <div class="p-4">
-            <!-- Header -->
-            <header class="header-nav">
-                <div class="logo"><img src="images/Gemini_Generated_Image_izc95vizc95vizc9.png" alt="hidesign logo"></div>
-                <nav>
-                    <a href="Home.html">Home</a>
-                    <a href="Services.html">Services</a>
-                    <a href="Contact.html">Contact Us</a>
-                </nav>
-            </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-image-container">
+                <img src="images/Bobcats.jpg" alt="Professional landscaping equipment in a forest setting.">
+            </div>
+            <div class="hero-content">
+                <h2>Welcome to Hi Design</h2>
+            </div>
+        </section>
 
-            <!-- Main Content -->
-            <main class="p-4 md:p-8">
-                <!-- Hero Section -->
-                <section class="text-center">
-                    <div class="placeholder-box h-64 md:h-96 flex-col">
-                        <img src="images/Bobcats.jpg" alt="hidesign logo">
-                        <p>Large Hero Image</p>
-                        <p class="mt-4 text-2xl md:text-4xl font-bold">"Welcome to Hi Design..."</p>
+        <!-- About Us Snippet -->
+        <section class="about-us">
+            <h3>About Us</h3>
+            <p>Brief paragraph about the company's mission, values, and experience to build immediate trust with visitors.</p>
+        </section>
+
+        <!-- Services Grid -->
+        <section>
+            <h3>Our Services</h3>
+            <div class="services-grid">
+                <div class="card">
+                    <div class="card-image-container">
+                        <img src="images/pavers with black rock.jpg" alt="Modern stone pavers with decorative black rock.">
                     </div>
-                </section>
-
-                <!-- About Us Snippet -->
-                <section class="mt-12 text-center">
-                    <h3>About Us</h3>
-                    <p class="max-w-3xl mx-auto text-gray-600">Brief paragraph about the company's mission, values, and experience to build immediate trust with visitors.</p>
-                </section>
-
-                <!-- Services Grid -->
-                <section class="mt-12">
-                    <h3 class="text-center">Our Services</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
-                        <div class="placeholder-box h-48 flex-col"><p>Service 1</p><p>(e.g. Design)</p>
-                        <img src="images/pavers with black rock.jpg" alt="hidesign logo">
-                        </div>
-                        <div class="placeholder-box h-48 flex-col"><p>Service 2</p><p>(e.g. Hardscape)</p>
-                        <img src="images/massive driveway.jpg" alt="hidesign logo">
-                        </div>
-                        <div class="placeholder-box h-48 flex-col"><p>Service 3</p><p>(e.g. Maintenance)</p>
-                        <img src="images/pavers with garage view.jpg" alt="hidesign logo">
-                        </div>
+                    <div class="card-content">
+                        <h4>Design</h4>
                     </div>
-                </section>
-
-                <!-- Portfolio Grid -->
-                 <section class="mt-12">
-                    <h3 class="text-center">Portfolio Highlights</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-                        <div class="placeholder-box h-40">Project 1
-                        <img src="images/fountain pic 1.jpg" alt="hidesign logo">
-                        </div>
-                        <div class="placeholder-box h-40">Project 2  
-                    <img src="images/retaining wall walk way.jpg" alt="hidesign logo">
-                        </div>
-                        <div class="placeholder-box h-40">Project 3
-                    <img src="images/pavers with steps.jpg" alt="hidesign logo">
-                        </div>
-                        <div class="placeholder-box h-40">Project 4
-                    <img src="images/grass and paver 1.jpg" alt="hidesign logo">
-                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-container">
+                        <img src="images/massive driveway.jpg" alt="A large, newly installed paver driveway.">
                     </div>
-                </section>
-            </main>
+                    <div class="card-content">
+                        <h4>Hardscape</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-container">
+                        <img src="images/pavers with garage view.jpg" alt="Paver walkway leading to a garage.">
+                    </div>
+                    <div class="card-content">
+                        <h4>Maintenance</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!-- Footer -->
-            <footer class="footer">
-                <div class="social">
+        <!-- Portfolio Grid -->
+        <section>
+            <h3>Portfolio Highlights</h3>
+            <div class="portfolio-grid">
+                <div class="card">
+                    <div class="card-image-container">
+                        <img src="images/fountain pic 1.jpg" alt="A beautiful stone water fountain in a garden.">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-container">
+                        <img src="images/retaining wall walk way.jpg" alt="A curved retaining wall alongside a walkway.">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-container">
+                        <img src="images/pavers with steps.jpg" alt="Stone paver patio with integrated steps.">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-container">
+                        <img src="images/grass and paver 1.jpg" alt="Modern patio with pavers and artificial grass inlay.">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social">
             <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="fb icon">
+                <img src="images/facebook.png" alt="Facebook icon">
             </a>
             <a href="https://twitter.com">
-                <img src="images/twitter_x_new_logo_x_rounded_icon_256078.webp" alt="twitter icon">
+                <img src="images/twitter_x_new_logo_x_rounded_icon_256078.webp" alt="Twitter X icon">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="instagram icon">
+                <img src="images/instagram.png" alt="Instagram icon">
             </a>
         </div>
-            </footer>
-        </div>
-    </div>
+    </footer>
 </body>
+</html>

@@ -6,143 +6,79 @@
     <title>Hi Design - Wireframe Visuals</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400&display=swap" rel="stylesheet">
-    <style>
-        /* Basic styles for wireframe visualization */
-        body {
-            font-family: 'Lato', sans-serif;
-            background-color: #f0f2f5;
-        }
-        .wireframe-container {
-            border: 3px solid #d1d5db;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 3rem;
-        }
-        .wireframe-header {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #4a5568;
-            color: white;
-            padding: 1rem;
-            border-top-left-radius: 6px;
-            border-top-right-radius: 6px;
-            text-align: center;
-            font-size: 1.5rem;
-        }
-        .placeholder-box {
-            background-color: #e2e8f0;
-            border: 2px dashed #a0aec0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #4a5568;
-            font-weight: bold;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .header-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            border-bottom: 1px solid #e2e8f0;
-        }
-         .header-nav .logo {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            font-size: 1.25rem;
-         }
-         .header-nav nav a {
-            margin-left: 1.5rem;
-            color: #2d3748;
-            font-weight: bold;
-         }
-         .footer {
-            background-color: #edf2f7;
-            border-top: 1px solid #e2e8f0;
-            padding: 2rem;
-            text-align: center;
-            color: #718096;
-         }
-         h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            text-align: center;
-         }
-    </style>
-</head>
-            <!-- Header -->
-            <header class="header-nav">
-                <div class="logo"><img src="images/Gemini_Generated_Image_izc95vizc95vizc9.png" alt="hidesign logo"></div>
-                <nav>
-                    <a href="Home.html">Home</a>
-                    <a href="Services.html">Services</a>
-                    <a href="Contact.html">Contact Us</a>
-                </nav>
-            </header>
-
-            <!-- Main Content -->
-            <main class="p-4 md:p-8">
-                <h3 class="text-center mt-0">Our Landscaping Services</h3>
-                
-                <!-- Service Item 1 -->
-                <section class="mt-8 flex flex-col md:flex-row items-center gap-8">
-                    <div class="placeholder-box w-full md:w-1/2 h-64">Service Image
-                        <img src="images/fountain pic 2.jpg" alt="hidesign logo">
-                    </div>
-                    <div class="w-full md:w-1/2">
-                        <h4 class="text-2xl font-bold font-montserrat">Landscape Design</h4>
-                        <p class="mt-2 text-gray-600">Detailed paragraph explaining the landscape design process, the types of projects undertaken, and the benefits of a professional design plan for clients.</p>
-                    </div>
-                </section>
-
-                <!-- Service Item 2 -->
-                <section class="mt-12 flex flex-col md:flex-row-reverse items-center gap-8">
-                     <div class="placeholder-box w-full md:w-1/2 h-64">Service Image
-                        <img src="images/pavers with black rock.jpg" alt="hidesign logo">
-                     </div>
-                    <div class="w-full md:w-1/2">
-                        <h4 class="text-2xl font-bold font-montserrat">Hardscaping</h4>
-                        <p class="mt-2 text-gray-600">Detailed paragraph about hardscaping services, covering patios, walkways, retaining walls, etc. Mention materials and the focus on durability and aesthetics.</p>
-                    </div>
-                </section>
-                
-                 <!-- Service Item 3 -->
-                <section class="mt-12 flex flex-col md:flex-row items-center gap-8">
-                    <div class="placeholder-box w-full md:w-1/2 h-64">Service Image
-                        <img src="images/Grass and paver 2.jpg" alt="hidesign logo">
-                    </div>
-                    <div class="w-full md:w-1/2">
-                        <h4 class="text-2xl font-bold font-montserrat">Lawn Maintenance</h4>
-                        <p class="mt-2 text-gray-600">Detailed paragraph covering regular maintenance services, such as mowing, fertilization, and seasonal clean-up. Emphasize reliability and care.</p>
-                    </div>
-                </section>
-
-                <!-- CTA Section -->
-                <section class="mt-16 text-center bg-gray-100 p-8 rounded-lg">
-                     <h4 class="text-2xl font-bold font-montserrat">Ready to Transform Your Space?</h4>
-                     <p class="mt-2 text-gray-700">Let's discuss your project. Contact us for a free consultation.</p>
-                     <button class="mt-4 px-8 py-3 bg-green-600 text-white font-bold rounded-lg shadow-md hover:bg-green-700">Get a Quote</button>
-                </section>
-            </main>
-
-            <!-- Footer -->
-        <footer class="footer">
-            <div class="social">
-                <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com">
-                <img src="images/twitter_x_new_logo_x_rounded_icon_256078.webp" alt="twitter icon">
-                 </a>
-                <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="instagram icon">
-                </a>
-            </div>
-        </footer>
+    <link rel="stylesheet" href="styles/hidesign.css">
+   
+<body>
+    <!-- Header -->
+    <header class="header-nav">
+        <div class="logo">
+            <img src="images/Gemini_Generated_Image_izc95vizc95vizc9.png" alt="Hi Design Logo">
         </div>
-    </div>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h3>Our Landscaping Services</h3>
+        
+        <!-- Service Item 1 -->
+        <section class="service-item">
+            <div class="service-image-container">
+                <img src="images/fountain pic 2.jpg" alt="Elegant water feature in a landscaped garden.">
+            </div>
+            <div class="service-description">
+                <h4>Landscape Design</h4>
+                <p>Detailed paragraph explaining the landscape design process, the types of projects undertaken, and the benefits of a professional design plan for clients.</p>
+            </div>
+        </section>
+
+        <!-- Service Item 2 (with reverse class) -->
+        <section class="service-item reverse">
+            <div class="service-image-container">
+                <img src="images/pavers with black rock.jpg" alt="Clean hardscape with pavers and black rock.">
+            </div>
+            <div class="service-description">
+                <h4>Hardscaping</h4>
+                <p>Detailed paragraph about hardscaping services, covering patios, walkways, retaining walls, etc. Mention materials and the focus on durability and aesthetics.</p>
+            </div>
+        </section>
+        
+        <!-- Service Item 3 -->
+        <section class="service-item">
+            <div class="service-image-container">
+                <img src="images/Grass and paver 2.jpg" alt="Lush green lawn with modern paver pathway.">
+            </div>
+            <div class="service-description">
+                <h4>Lawn Maintenance</h4>
+                <p>Detailed paragraph covering regular maintenance services, such as mowing, fertilization, and seasonal clean-up. Emphasize reliability and care.</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h4>Ready to Transform Your Space?</h4>
+            <p>Let's discuss your project. Contact us for a free consultation.</p>
+            <a href="Contact.html" class="cta-button">Get a Quote</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter_x_new_logo_x_rounded_icon_256078.webp" alt="Twitter X icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+        </div>
+    </footer>
 </body>
+</html>

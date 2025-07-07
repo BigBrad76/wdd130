@@ -1,0 +1,587 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap');
+                                            /* contact Us Css *//* Basic Body Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Header and Navigation Styles */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-nav .logo img {
+    height: 60px; /* Adjust size as needed */
+    width: auto;
+}
+
+.header-nav nav a {
+    margin-left: 1.5rem;
+    color: #2d3748;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.header-nav nav a:hover {
+    color: #0b5be7; /* A nice blue for hover */
+}
+
+/* Main Content Area */
+main {
+    padding: 2rem 1rem; /* Add padding for smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2d3748;
+}
+
+main .text-center {
+    text-align: center;
+    color: #718096;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+/* Contact Grid Layout */
+.contact-grid {
+    display: flex;
+    flex-direction: column; /* Stack on mobile */
+    gap: 2.5rem;
+}
+
+/* Contact Information Section (Left) */
+.contact-info {
+    width: 100%;
+}
+
+.contact-info h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #2d3748;
+}
+
+.contact-info .info-details p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contact-info .info-details strong {
+    color: #4a5568;
+}
+
+.contact-info .contact-image-container {
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-info .contact-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Contact Form (Right) */
+.contact-form {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0b5be7;
+    box-shadow: 0 0 0 3px rgba(11, 91, 231, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #28a745; /* A friendly green */
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.submit-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #4a5568; /* Darker footer for contrast */
+    padding: 2rem;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social img {
+    height: 30px; /* Adjust social icon size */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Responsive Design - Media Queries */
+@media (min-width: 768px) {
+    main {
+        padding: 2rem;
+    }
+    
+    .contact-grid {
+        flex-direction: row; /* Side-by-side on larger screens */
+    }
+
+    .contact-info {
+        width: 40%;
+    }
+
+    .contact-form {
+        width: 60%;
+    }
+}
+                                /* Home page Css *//* Basic Body Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Header and Navigation Styles */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-nav .logo img {
+    height: 60px; /* Adjust size as needed */
+    width: auto;
+}
+
+.header-nav nav a {
+    margin-left: 1.5rem;
+    color: #2d3748;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.header-nav nav a:hover {
+    color: #28a745; /* Green to match the brand */
+}
+
+/* Main Content Area */
+main {
+    padding: 0; /* Remove padding to allow hero to be full-width */
+    max-width: 100%;
+}
+
+/* Section-level heading styles */
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+/* General Section Padding */
+main > section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 0; /* Remove padding for full width */
+    max-width: 100%; /* Ensure it spans the full width */
+}
+
+.hero-image-container {
+    height: 80vh; /* Adjust height as needed */
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This is key to prevent stretching */
+    filter: brightness(0.6); /* Darken image to make text readable */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* About Us Section */
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: center;
+    color: #4a5568;
+}
+
+/* Services and Portfolio Grid Styles */
+.services-grid, .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Card styles for services and portfolio */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card-image-container {
+    height: 250px;
+    width: 100%;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-content h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    color: #2d3748;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #4a5568; /* Darker footer for contrast */
+    padding: 2rem;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social img {
+    height: 30px; /* Adjust social icon size */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design - Media Queries */
+@media (min-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on tablet and up */
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for portfolio on tablet */
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(4, 1fr); /* Four columns on desktop */
+    }
+}
+
+
+                    /* services page css *//* Basic Body Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Header and Navigation Styles */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-nav .logo img {
+    height: 60px; /* Adjust size as needed */
+    width: auto;
+}
+
+.header-nav nav a {
+    margin-left: 1.5rem;
+    color: #2d3748;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.header-nav nav a:hover {
+    color: #28a745; /* Green to match the brand */
+}
+
+/* Main Content Area */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Page Title */
+main > h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2d3748;
+    margin-bottom: 3rem;
+}
+
+/* Service Section Styles */
+.service-item {
+    display: flex;
+    flex-direction: column; /* Stack on mobile */
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+/* Alternating layout for larger screens */
+@media (min-width: 768px) {
+    .service-item {
+        flex-direction: row;
+    }
+    .service-item.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+
+.service-image-container {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents image stretching */
+}
+
+.service-description {
+    width: 100%;
+}
+
+.service-description h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #2d3748;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.service-description p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4a5568;
+}
+
+@media (min-width: 768px) {
+    .service-image-container, .service-description {
+        width: 50%;
+    }
+}
+
+/* Call to Action (CTA) Section */
+.cta-section {
+    margin-top: 4rem;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.cta-section h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #2d3748;
+    margin-top: 0;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    background-color: #28a745;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #4a5568; /* Darker footer for contrast */
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social img {
+    height: 30px; /* Adjust social icon size */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
