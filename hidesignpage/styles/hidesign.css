@@ -150,14 +150,14 @@ main.home-main > section {
 
 .hero-content {
     position: absolute;
-    top: 75%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .hero-content h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem; /* Increased from 3.5rem */
+    font-size: 3rem; /* Increased from 3.5rem */
     font-weight: 700;
     margin: 0;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
