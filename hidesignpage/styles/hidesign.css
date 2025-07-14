@@ -150,14 +150,14 @@ main.home-main > section {
 
 .hero-content {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .hero-content h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4rem; /* Increased from 3.5rem */
+    font-size: 2rem; /* Increased from 3.5rem */
     font-weight: 700;
     margin: 0;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
@@ -165,7 +165,7 @@ main.home-main > section {
 
 .about-us p {
     max-width: 800px;
-    margin: 1rem auto 0 auto;
+    margin: 1rem auto  auto;
     font-size: 1.2rem; /* Increased from 1.1rem */
     line-height: 1.7;
     text-align: center;
